@@ -12,7 +12,7 @@ body
 .top-nav
     background-color: $white
     padding: 15px
-    $_menu
+    &_menu
         list-style: none
         padding: 0
         display: flex
@@ -33,10 +33,21 @@ body
                     transform: translateY(40px) scale(0)
                     transition: all 0.2s
                 &:hover
-                    text-decoration: 
+                    text-decoration: none 
                     &::after 
                         transform: translateY(38px) scale(1)
 
+.left-sidebar
+    background-color: $white
+    &_menu
+        list-style: none
+        padding: 0
+        li
+            padding: 15px 29px
+            &:first-child
+                padding-top: 29px
+            &:last-child
+                padding-bottom: 29px
 
 
 
