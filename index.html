@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Inventory</title>
 </head>
@@ -39,6 +41,7 @@
     <div class="row">
         <div class="col-md-4">
             <div class="left-sidebar">
+
                 <ul class="left-sidebar-menu">
                     <li><a href="#">Земля</a></li>
                     <li><a href="#">Жилая недвижемость</a></li>
@@ -48,9 +51,57 @@
                     <li><a href="#">Строительство</a></li>
                     <li><a href="#">Аренда</a></li>
                 </ul>
+
+                <div class="left-sidebar-object">
+                    <img src="img/happyhouse.jpg" alt="До счастья">
+                    <div class="left-sidebar-object-description">
+                        <h3>Residential complex</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#">Lorem ipsum &#187</a>
+                    </div>
+                </div>
+
+                <div class="left-sidebar-object">
+                    <img src="img/happyhouse.jpg" alt="До счастья">
+                    <div class="left-sidebar-object-description">
+                        <h3>Residential complex</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#">Lorem ipsum &#187</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-md-8"></div>
+        <div class="col-md-8">
+            <div class="content">
+                <h2>Event</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam impedit aut neque nisi perferendis minima itaque rerum voluptatum optio ullam, quos unde nostrum? Nobis aliquid iure aut cum dolor id doloremque voluptate. Quibusdam, dolorem quo dicta mollitia porro voluptatibus! Numquam aliquid molestiae quia. Suscipit praesentium ipsam ea voluptates? Quaerat dolores esse, accusamus suscipit sint quibusdam hic impedit quae perspiciatis laborum quisquam amet accusantium maiores tenetur nihil nobis officiis fugit.</p>
+                
+                <p>Dolorum similique ratione molestiae voluptatem numquam voluptates autem soluta vero enim veniam, facere dignissimos ipsum debitis molestias distinctio accusantium, maxime rerum sunt accusamus sapiente iste itaque dicta! Reprehenderit sequi culpa consequuntur veritatis architecto deleniti vitae voluptatem natus quo aut esse, at, delectus veniam hic enim laboriosam eligendi! Consectetur id commodi at obcaecati neque repellendus magnam dignissimos, earum quo cumque nisi voluptates eligendi quaerat ad distinctio provident optio hic perferendis quam doloribus vero tempore nam?</p>
+                
+                <p>Quae quis illum officiis, eum consequuntur ullam quidem iste amet reprehenderit error sed quo veritatis dolorum rem, minima, quod dicta impedit id ut atque iusto. Quas consectetur minima ducimus iure odio, repudiandae modi saepe iste eligendi ullam labore similique aut ratione, officia eius sint corporis quasi. Rem molestias pariatur inventore veniam veritatis est reiciendis reprehenderit, ad atque?</p>
+                <a href="#" class="btn btn-primary">About company</a>
+            </div>
+            <div class="directions">
+                <h2>Area Of Activity</h2>
+                <div class="direction-blocks">
+                    <div class="directions-block">
+                        <h3>lorem 1</h3>
+                    </div>
+                    <div class="directions-block">
+                        <h3>lorem 2</h3>
+                    </div>
+                    <div class="directions-block">
+                        <h3>lorem 3</h3>
+                    </div>
+                    <div class="directions-block">
+                        <h3>lorem 4</h3>
+                    </div>
+                    <div class="directions-block">
+                        <h3>lorem 5</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -59,5 +110,16 @@
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/jquery-3.7.1.slim.min.js"></script>
 <script src="js/script.js"></script>
+<script src="slick/slick.js"></script>
+
+<script>
+    $('.direction-blocks').slick({
+        arrows: false,
+        dots: false,
+        slidesToShow: 4,
+        slidesToScroll: 1
+    });
+</script>
+
 </body>
 </html>

@@ -1,3 +1,7 @@
+.slick-active {
+  outline: none !important;
+}
+
 html {
   font-size: 14px;
 }
@@ -7,6 +11,31 @@ body {
   color: #131313;
   font-family: "Roboto", sans-serif;
   padding-top: 40px;
+}
+
+a {
+  color: #009adf;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.btn {
+  padding: 20px 30px;
+  display: inline-block;
+  color: #faf8f8;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+.btn-primary {
+  background-color: #009adf;
+  border-bottom: 5px solid #0077ac;
+}
+.btn-primary:hover {
+  background-color: #00a1e9;
 }
 
 .top-nav {
@@ -46,9 +75,9 @@ body {
 
 .left-sidebar {
   margin-top: 40px;
-  background-color: #faf8f8;
 }
 .left-sidebar-menu {
+  background-color: #faf8f8;
   list-style: none;
   padding: 0;
 }
@@ -74,6 +103,35 @@ body {
   color: #131313;
   font-size: 16px;
   font-weight: 400;
+}
+.left-sidebar-object {
+  margin-top: 30px;
+  background-color: #faf8f8;
+}
+.left-sidebar-object-description {
+  padding: 30px;
+}
+.left-sidebar-object-description h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.content {
+  margin-top: 40px;
+}
+
+.directions {
+  margin-top: 80px;
+}
+.directions-block {
+  background-color: #faf8f8;
+  height: 220px;
+  text-align: center;
+  margint: 0 15px;
+  padding: 10px;
+}
+.directions-block h3 {
+  color: #009adf;
 }
 
 /*# sourceMappingURL=main.css.map */
