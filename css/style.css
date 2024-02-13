@@ -15,7 +15,7 @@ body {
 }
 
 
-.top-nav_menu {
+.top-nav-menu {
     list-style: none;
     padding: 0;
     display: -webkit-box;
@@ -25,9 +25,81 @@ body {
 }
 
 
-.top-nav_menu li {
+.top-nav-menu li {
     margin-right: 45px;
 }
+
+.top-nav-menu li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #131313;
+    font-weight: 700;
+}
+
+.top-nav-menu li a::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    display: block;
+    background-color: #FFF;
+    background-color: #009adf;
+    transform: translateY(40px) scale(0);
+    transition: all 0.2s;
+}
+
+.top-nav-menu li a:hover {
+    text-decoration: none;
+}
+
+.top-nav-menu li a:hover::after {
+    transform: translateY(38px) scale(1);
+}
+
+.left-sidebar {
+    margin-top: 40px;
+    background-color: #faf8f8;
+}
+.left-sidebar-menu {
+    list-style: none;
+    padding: 0;
+}
+.left-sidebar-menu li {
+    transition: all 0.1s;
+}
+.left-sidebar-menu li:first-child a {
+    padding-top: 20px;
+}
+.left-sidebar-menu li:last-child a {
+    padding-bottom: 20px;
+}
+.left-sidebar-menu li:hover {
+    background-color: #009adf;
+}
+.left-sidebar-menu li:hover a {
+    color: #faf8f8;
+}
+.left-sidebar-menu li a {
+    display: block;
+    padding: 15px 29px;
+    text-decoration: none;
+    color: #131313;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*# sourceMappingURL=main.css.map */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
