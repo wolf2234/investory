@@ -7,19 +7,17 @@ html
 
 
 body
+    margin: 0
     background-color: $body-bg
     color: $dark
     font-family: 'Roboto', sans-serif
     padding-top: 40px
-
-
 
 a
     color: $active-color
 
 h2
     font-size: 24px
-
 
 .btn
     padding: 20px 30px
@@ -68,6 +66,9 @@ h2
 
 .left-sidebar
     margin-top: 40px
+    img
+        height: 250px
+        width: 350px
     &-menu
         background-color: $white
         list-style: none
@@ -107,17 +108,64 @@ h2
 .directions
     margin-top: 80px
     &-block
+        background-image: url('../img/happyhouse.jpg')
+        background-size: 170px 150px
+        background-repeat: no-repeat
+        background-position: bottom center
         background-color: $white
         height: 220px
         text-align: center
-        margint: 0 15px
+        margin: 0 15px
         padding: 10px
         h3
             color: $active-color
 
-
-
-
+.footer
+    margin-top: 60px
+    background-color: $dark
+    color: $footer-text
+    padding: 50px 0
+    &-policy-link
+        font-size: 12px
+    &-contacts
+        text-align: right
+        &-phone
+            font-weight: 400
+            font-size: 20px
+            color: $active-color
+    &-social-links
+        @extend .footer-contacts
+        li
+            display: inline-block
+            a
+                display: inline-block
+                width: 35px
+                height: 35px
+                text-align: center
+                line-height: 42px
+                margin-left: 10px
+                transform: all 0.2s
+    small
+        display: block
+        margin-top: 56px
+        line-height: 16px
+        font-size: 10px
+        max-width: 80%
+    a
+        color: $footer-text
+        text-decoration: none
+        &:hover
+            color: $white
+    p
+        margin-bottom: 14px
+    img
+        height: 30px
+        width: 30px
+    ul
+        padding: 0
+        list-style: none
+        li
+            line-height: 32px
 
 
 
