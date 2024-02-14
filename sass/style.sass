@@ -4,7 +4,7 @@
 
 
 html
-    font-size: 14px
+    font-size: 10px
 
 
 body
@@ -13,6 +13,7 @@ body
     color: $dark
     font-family: 'Roboto', sans-serif
     padding-top: 40px
+    font-size: 14px
 
 a
     color: $active-color
@@ -79,7 +80,26 @@ h2
 
 
 .left-sidebar
-    margin-top: 40px
+    margin-top: 4rem
+    &-btn
+        background-color: $white
+        padding: 15px
+        position: relative
+        &:hover
+            cursor: pointer
+        &::after
+            content: ''
+            display: inline-block
+            top: 50%
+            margin-top: -10px
+            right: 15px
+            width: 15px
+            height: 15px
+            position: absolute
+            border-bottom: 2px solid $dark
+            border-right: 2px solid $dark
+            transform: rotate(45deg)
+
     img
         height: 250px
         width: 350px
