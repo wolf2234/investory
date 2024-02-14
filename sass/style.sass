@@ -1,5 +1,6 @@
 @import "colors"
 @import "reset"
+@import "media"
 
 
 html
@@ -38,6 +39,19 @@ h2
 .top-nav
     background-color: $white
     padding: 15px
+    position: relative
+    &-btn
+        display: none
+        width: 30px
+        height: 30px
+        background-color: transparent
+        border: none
+        font-size: 18px
+        position: absolute
+        right: 16px
+        top: -50px
+        &:hover
+            cursor: pointer
     &-menu
         list-style: none
         padding: 0
@@ -167,5 +181,6 @@ h2
         li
             line-height: 32px
 
+@import "media"
 
 
