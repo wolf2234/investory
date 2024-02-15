@@ -188,6 +188,9 @@ h2 {
   transform: translateY(37px) scale(0);
   transition: all 0.2s;
 }
+.top-nav-menu li a:hover {
+  text-decoration: none;
+}
 .top-nav-menu li a:hover::after {
   transform: translateY(38px) scale(1);
 }
@@ -518,4 +521,4 @@ h2 {
   li {
     margin: 0;
   }
-}/*# sourceMappingURL=style.css.map */
+}
