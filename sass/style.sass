@@ -6,6 +6,8 @@
 html
     font-size: 10px
 
+img
+    max-width: 100%
 
 body
     margin: 0
@@ -36,10 +38,9 @@ h2
             background-color: lighten($active-color, 2%)
 
 
-
-.top-nav
+.top-nav 
     background-color: $white
-    padding: 15px
+    padding: 15px 34px
     position: relative
     &-btn
         display: none
@@ -49,16 +50,19 @@ h2
         border: none
         font-size: 18px
         position: absolute
-        right: 16px
+        right: 15px
         top: -50px
         &:hover
             cursor: pointer
     &-menu
+        transition: all 0.2s
         list-style: none
         padding: 0
         display: flex
         li
             margin-right: 45px
+            &:last-child
+                margin-right: 0
             a
                 text-transform: uppercase
                 text-decoration: none
@@ -69,12 +73,11 @@ h2
                     width: 100%
                     height: 2px
                     display: block
-                    background-color: #FFF
                     background-color: $active-color
-                    transform: translateY(40px) scale(0)
+                    transform: translateY(37px) scale(0)
                     transition: all 0.2s
                 &:hover
-                    text-decoration: none 
+                    text-decoration
                     &::after
                         transform: translateY(38px) scale(1)
 
@@ -82,6 +85,7 @@ h2
 .left-sidebar
     margin-top: 4rem
     &-btn
+        display: none
         background-color: $white
         padding: 15px
         position: relative
@@ -99,7 +103,6 @@ h2
             border-bottom: 2px solid $dark
             border-right: 2px solid $dark
             transform: rotate(45deg)
-
     img
         height: 250px
         width: 350px
@@ -126,18 +129,11 @@ h2
                 color: $dark
                 font-size: 16px
                 font-weight: 400
-    &-object
-        margin-top: 30px
-        background-color: $white
-        &-description
-            padding: 30px
-            h3
-                text-transform: uppercase
-                font-weight: 400
 
 
 .content
     margin-top: 40px
+    margin-bottom: 76px
 
 .directions
     margin-top: 80px
@@ -159,26 +155,6 @@ h2
     background-color: $dark
     color: $footer-text
     padding: 50px 0
-    &-policy-link
-        font-size: 12px
-    &-contacts
-        text-align: right
-        &-phone
-            font-weight: 400
-            font-size: 20px
-            color: $active-color
-    &-social-links
-        @extend .footer-contacts
-        li
-            display: inline-block
-            a
-                display: inline-block
-                width: 35px
-                height: 35px
-                text-align: center
-                line-height: 42px
-                margin-left: 10px
-                transform: all 0.2s
     small
         display: block
         margin-top: 56px
@@ -200,6 +176,95 @@ h2
         list-style: none
         li
             line-height: 32px
+    &-policy-link
+        font-size: 12px
+    &-contacts
+        text-align: right
+        &-phone
+            font-weight: 400
+            font-size: 20px
+            color: $active-color
+    &-social-links
+        @extend .footer-contacts
+        li
+            display: inline-block
+            a
+                display: inline-block
+                width: 35px
+                height: 35px
+                text-align: center
+                line-height: 42px
+                margin-left: 10px
+                border-radius: 50%
+                transform: all 0.2s
+                background-color: rgba($white, 0.1)
+                &:hover
+                    background-color: rgba($white, 0.9)
+                    color: $dark
+
+.team
+    text-align: center
+    h4
+        font-size: 18px
+        font-weight: 400px
+        margin-bottom: 15px
+    p
+        margin-bottom: 40px
+
+.contacts
+    font-size: 16px
+    &-img
+        margin-right: 12px
+        vertical-align: middle
+        width: 20px
+        height: 20px
+    &-address
+        display: block
+        line-height: 2
+        margin-bottom: 20px
+        line-height: 2
+    &-btn
+        margin-top: 36px
+    &-social-links
+        ul
+            list-style: none
+            margin-top: 36px
+            padding: 0
+            li
+                display: inline-block
+                a
+                    display: inline-block
+                    color: $white
+                    margin-right: 15px
+                    width: 32px
+                    height: 32px
+                    text-align: center
+                    line-height: 32px
+                    border-radius: 50%
+
+.organization
+    &-card
+        background-color: $white
+        margin-bottom: 30px
+        min-height: 42rem
+        display: flex
+        flex-direction: column
+        padding: 25px 30px
+        transition: all 0.2s
+        &:hover
+            box-shadow: 0 5px 10px rgba(0, 0, 1, 0.1)
+        a
+            text-transform: uppercase
+            text-decoration: none
+            display: block
+            margin-bottom: 20px
+        small
+            display: block
+            color: $inn
+            line-height: 1.6
+            margin-bottom: 20px
+        p
+            line-height: 22px
 
 @import "media"
 
