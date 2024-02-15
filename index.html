@@ -20,12 +20,12 @@
     <h1>Hello world!</h1>
     <div class="top-nav">
         <div class="row justify-content-between align-items-center">
-            <div class="col-md-auto">
+            <div class="col-lg-auto col-sm-3">
                 <div class="logo">
                     <img src="img/logo.png" height="100px" weight="100px" alt="СтройИнвест">
                 </div>
             </div>
-            <div class="col-md-auto">
+            <div class="col-lg-auto col-sm-9">
                 <button class="top-nav-btn">
                     <i class="icon-menu"></i>
                 </button>
@@ -43,7 +43,7 @@
     </div>
 
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-lg-4">
             <div class="left-sidebar">
                 <div class="left-sidebar-btn">
                     Категории
@@ -77,7 +77,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-8">
+        <div class="col-lg-8">
             <div class="content">
                 <h2>Event</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam impedit aut neque nisi perferendis minima itaque rerum voluptatum optio ullam, quos unde nostrum? Nobis aliquid iure aut cum dolor id doloremque voluptate. Quibusdam, dolorem quo dicta mollitia porro voluptatibus! Numquam aliquid molestiae quia. Suscipit praesentium ipsam ea voluptates? Quaerat dolores esse, accusamus suscipit sint quibusdam hic impedit quae perspiciatis laborum quisquam amet accusantium maiores tenetur nihil nobis officiis fugit.</p>
@@ -115,7 +115,7 @@
 <footer class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-lg-4">
                 <div class="copy">
                     <p>Copyright @ 2014-2017</p>
                     <a href="#" class="footer-policy-link">Политика конфиденциальности</a>
@@ -126,7 +126,7 @@
             </div>
             <!-- /.col-md -->
     
-            <div class="col-md-2">
+            <div class="col-lg-2 col-6">
                 <ul class="footer-menu">
                     <li><a href="#">Главная</a></li>
                     <li><a href="#">О компании</a></li>
@@ -138,7 +138,7 @@
             </div>
             <!-- /.col-md -->
     
-            <div class="col-md">
+            <div class="col-lg-4">
                 <ul class="footer-menu">
                     <li><a href="#">Земля</a></li>
                     <li><a href="#">Жилая недвижемость</a></li>
@@ -151,7 +151,7 @@
             </div>
             <!-- /.col-md -->
     
-            <div class="col-md">
+            <div class="col-lg">
                 <div class="footer-contacts">
                     <p class="footer-contacts-phone">8 (800) 850-50-50</p>
                     <p class="footer-contacts-address">Lorem ipsum dolor sit amet.</p>
@@ -175,7 +175,6 @@
 </footer>
 
 
-
 <script src="js/jquery-3.7.1.slim.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/script.js"></script>
@@ -185,16 +184,31 @@
         arrows: false,
         dots: false,
         slidesToShow: 4,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
     });
 </script>
 <script>
     $(document).ready(function() {
         var menuBtn = $('.top-nav-btn');
+        var sidebarBtn = $('.left-sidebar-btn')
         var menu = $('.top-nav-menu');
+        var sidebarMenu = $('.left-sidebar-menu')
         menuBtn.on('click', function(event){
             event.preventDefault();
             menu.toggleClass('top-nav-menu__active');
+        });
+        menuBtn.on('click', function(event){
+            event.preventDefault();
+            sidebarMenu.toggleClass('top-nav-menu__active');
         });
     });
 </script>

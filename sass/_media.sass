@@ -17,3 +17,57 @@
                 a
                     &::after
                         display: none
+    .left-sidebar
+        margin-top: 4rem
+        &-object
+            display: none
+        &-btn
+            display: block
+        &-menu
+            display: none
+            &__active
+                display: block
+    .copy
+        text-align: center
+        small
+            display: block
+            margin: 36px auto
+    .footer
+        &-contacts
+            text-align: left
+
+
+@media (min-width:767px) and (max-width:991px)
+    html
+        font-size: 5px
+    .top-nav
+        &-btn
+            display: block
+        &-menu
+            flex-direction: column
+            display: none
+            &__active
+                display: flex
+                margin-bottom: 0
+                justify-content: space-around
+            li
+                margin-right: 0
+                line-height: 2
+                a
+                    &::after
+                        display: none
+    .left-sidebar
+        margin-top: 4rem
+        &-object
+            display: none
+        &-btn
+            display: block
+        &-menu
+            display: none
+            &__active
+                display: block
+    .footer
+        &-contacts
+            text-align: left
+
+
