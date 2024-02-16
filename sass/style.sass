@@ -267,10 +267,99 @@ h2
             line-height: 22px
 
 .calc
+    h4
+        margin-top: 0
+        margin-bottom: 30px
+    &-radio
+        flex-basis: 50%
+        &:last-child
+            flex-basis: 100%
+            display: flex
+    &-legal
+        font-size: 12px
     &-programms
         display: flex
-        &-radio
-            flex-basis: 50%
+        flex-wrap: wrap
+        label
+            display: inline-block
+            margin-bottom: 20px
+            small
+                display: block
+                margin-left: 30px
+                opacity: 0.5
+                font-size: 10px
+            &:hover
+                cursor: pointer
+            &::before
+                content: ''
+                display: inline-block
+                vertical-align: middle
+                width: 24px
+                height: 24px
+                box-shadow: 0 5px 10px rgba(0, 0, 1, 0.1)
+                background-color: $white
+                border: 6px solid $white
+                border-radius: 50%
+                transition: all 0.2s
+    input[type="radio"]
+        display: none
+        &:checked
+            &+label::before
+                background-color: $active-color
+                border: 6px solid $white
+    &-popular
+        padding-left: 4px
+        padding-right: 5px
+        margin-left: 16px
+        height: 25px
+        color: $white
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 10px
+        text-transform: uppercase
+        background-color: $active-color
+        position: relative
+        &::before
+            content: ''
+            width: 6px
+            height: 13px
+            position: absolute
+            left: -12px
+            top: 50%
+            margin-top: -6px
+            border: 6px solid transparent
+            border-right: 6px solid $active-color
+    &-summ
+        &-invest
+            margin-top: 30px
+            &-label
+                margin-right: 10px
+            &-num
+                display: inline-block
+                padding: 10px 48px
+                background-color: $white
+                font-size: 18px
+    &-total, &-monthly
+        margin-top: 20px
+        display: inline-block
+        text-align: center
+        background-color: $white
+        padding: 10px 0
+        margin-right: 34px
+        strong
+            font-size: 18px
+            color: $active-color
+            font-weight: 400
+        small
+            font-size: 10px
+    &-monthly
+        background-color: transparent
+        display: inline-block
+        text-align: center
+        font-size: 15px
+        small
+            font-size: 10px
 
 @import "media"
 

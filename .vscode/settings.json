@@ -1,12 +1,17 @@
 {
     "liveSassCompile.settings.autoprefix": [],
+    "liveSassCompile.settings.includeItems": [],
     "liveSassCompile.settings.formats": [
         {
             "format": "expanded",
             "extensionName": ".css",
-            "savePath": null,
+            "savePath": "~/../css",
             "savePathReplacementPairs": null
+        },
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "~/../css",
         }
     ],
-    "liveSassCompile.settings.includeItems": []
 }
