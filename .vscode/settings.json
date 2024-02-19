@@ -14,4 +14,9 @@
             "savePath": "~/../css",
         }
     ],
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    },
 }
