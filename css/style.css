@@ -530,6 +530,36 @@ h2 {
   font-size: 10px;
 }
 
+.object-card {
+  background-color: #faf8f8;
+}
+.object-card-text {
+  padding: 30px;
+}
+.object-card-title {
+  display: block;
+  font-style: 16px;
+  color: #009adf;
+  text-decoration: none;
+}
+.object-card-price {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  color: #009adf;
+  text-align: center;
+}
+.object-card-btn {
+  display: block;
+  text-align: center;
+}
+.object-card-more {
+  display: block;
+  color: #131313;
+  margin-top: 30px;
+  text-align: center;
+}
+
 @media (max-width: 480px) {
   html {
     font-size: 5px;
